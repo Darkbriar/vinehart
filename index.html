@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vinehart</title>
+  <style>
+    body {
+      margin: 0;
+      background: #111;
+      color: #ccc;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    nav {
+      background: #000;
+      padding: 1em;
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: #6fef8a;
+      text-decoration: none;
+      font-weight: bold;
+      border: 1px solid #6fef8a;
+      padding: 0.5em 1em;
+      border-radius: 8px;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    nav a:hover {
+      background: #6fef8a22;
+      transform: scale(1.05);
+    }
+
+    .hero {
+      background: url('assets/Vinehart-Emblem.png') center/contain no-repeat;
+      height: 92vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      text-align: center;
+      padding-bottom: 2em;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin: 0;
+      color: #6fef8a;
+      text-shadow: 0 0 10px #6fef8a88;
+    }
+
+    footer {
+      background: #000;
+      color: #444;
+      text-align: center;
+      padding: 1em;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h1>Vinehart Web Core</h1>
+  </div>
+
+  <footer>
+    &copy; 2025 Vinehart | Built with vibe coding & caffeine
+  </footer>
+</body>
+</html>
