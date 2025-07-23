@@ -27,8 +27,11 @@
       font-weight: bold;
     }
     nav a:hover { text-decoration: underline; }
+
+    /* Inline hero with emblem to ensure display */
     .hero {
-      background: url('assets/vinehart-emblem.png') center/250px no-repeat;
+      background: url('assets/vinehart-emblem.png') center/contain no-repeat;
+      background-color: var(--bg-dark);
       height: 60vh;
       display: flex;
       align-items: flex-end;
@@ -41,6 +44,7 @@
       color: var(--vine-green);
       text-shadow: 0 0 8px #2a2;
     }
+
     footer {
       padding: 1rem 0;
       font-size: 0.8rem;
