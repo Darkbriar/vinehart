@@ -2,74 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vinehart</title>
-  <style>
-    body {
-      <nav style="text-align: center; margin-bottom: 20px;">
-  <a href="index.html">Home</a> |
-  <a href="about.html">About</a> |
-  <a href="projects.html">Projects</a> |
-  <a href="contact.html">Contact</a>
-</nav>
 
-      margin: 0;
-      font-family: sans-serif;
-      color: #e0e0e0;
-      background-color: #111;
+  <!--‑‑ Quick, minimal styling ‑‑‑>
+  <style>
+    :root {
+      --vine‑green: #6fef8a;
+      --bg‑dark: #111;
     }
-    header {
-      background: url('assets/vinehart-emblem.png') center/contain no-repeat;
-      height: 300px;
-      background-size: 200px;
-      background-color: #060d06;
+    body {
+      margin: 0;
+      background: var(--bg‑dark);
+      color: #e0e0e0;
+      font-family: system-ui, sans-serif;
+      text-align: center;
+    }
+
+    /* SINGLE navigation bar (no duplicates!) */
+    nav {
+      background: #000;
+      padding: 1rem 0;
+    }
+    nav a {
+      color: var(--vine‑green);
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+
+    /* Hero with emblem */
+    .hero {
+      background: url('assets/vinehart-emblem.png') center/250px no-repeat;
+      height: 60vh;
       display: flex;
       align-items: flex-end;
       justify-content: center;
+      padding-bottom: 2rem;
     }
-    nav {
-      background-color: #0c180c;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      padding: 1rem 0;
-      border-bottom: 2px solid #1a2f1a;
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: var(--vine‑green);
+      text-shadow: 0 0 8px #2a2;
     }
-    nav a {
-      color: #90ee90;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.2s;
-    }
-    nav a:hover {
-      color: #b5ffb5;
-    }
-    main {
-      padding: 2rem;
-      text-align: center;
-    }
+
     footer {
-      padding: 1rem;
+      padding: 1rem 0;
       font-size: 0.8rem;
-      text-align: center;
-      color: #444;
+      color: #666;
     }
   </style>
 </head>
+
 <body>
-  <header></header>
+
+  <!-- ONE navigation bar -->
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Projects</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
   </nav>
-  <main>
-    <h1>Welcome to Vinehart</h1>
-    <p>Vibe-coded. Player-driven. Purpose-built.</p>
-  </main>
-  <footer>
-    &copy; 2025 Vinehart. All vibes reserved.
-  </footer>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <h1>Vinehart Web Core</h1>
+  </div>
+
+  <footer>&copy; 2025 Vinehart | Built with vibe coding&nbsp;&&nbsp;caffeine</footer>
+
 </body>
 </html>
